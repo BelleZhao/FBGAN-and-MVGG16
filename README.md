@@ -124,7 +124,7 @@ The test and train data should be put under '../data/test/' and '../data/train/'
 #### KNN
     
     $ cd KNN
-    $ python KNN.PY
+    $ python KNN.py
 
 #### Softmax
 The num_training, num_validation and num_test should be changed according to your dataset.
