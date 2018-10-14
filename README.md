@@ -23,6 +23,7 @@ The network G:
 #### Usage of ForwardGAN
 To train a model with dataset train:
 
+    $ cd FBGAN
     $ cd ForwardGAN
     $ python main.py --dataset train --input_height=64 --output_height=64 --train
 
@@ -61,6 +62,8 @@ Malignant samples:
 
 To train a model:
 
+    $ cd FBGAN
+    $ cd BackwardGAN
     $ python main.py --train=True
 
 You can also use your dataset to train BackwardGAN. You need put the noise images under '../data/noise images/', and put clear images under '../data/clear images/'. Then train the model by:
@@ -79,4 +82,78 @@ Benign samples:
 
 Malignant samples:
 ![Image text](https://github.com/BelleZhao/FBGAN-and-MVGG16/blob/master/results/BackwardGAN1.png)
+
+
+## M-VGG16 in Tensorflow
+
+### Prerequisites
+
+* Python 2.7
+* Tensorflow-gpu 1.4.0
+* Keras
+* Pillow
+* sklearn
+* Numpy
+* matplotlib
+
+### Usage of M-VGG16
+
+    $ cd Different Classification Methods
+    $ cd MVGG16
+    $ python main.py
+    
+
+
+## Different Classification Methods
+
+### Prerequisites
+
+* Python 2.7
+* Tensorflow-gpu 1.4.0
+* Keras
+* Pillow
+* sklearn
+* Numpy
+* matplotlib
+
+### Usage
+The test and train data should be put under '../data/test/' and '../data/train/'.
+    $ cd Different Classification Methods
+
+#### KNN
+    
+    $ cd KNN
+    $ python KNN.PY
+
+#### Softmax
+The num_training, num_validation and num_test should be changed according to your dataset.
+
+    $ cd Softmax
+    $ python softmax.py
+
+#### SVM
+The num_training, num_validation and num_test should be changed according to your dataset.
+
+    $ cd SVM
+    $ python SVM.py
+    
+#### CNN
+
+    $ cd CNN
+    $ python main.py
+
+#### GoogLeNet
+    
+    $ cd GoogLeNet
+    $ python main.py
+
+#### ResNet
+
+    $ cd ResNet
+    $ python main.py
+
+#### VGG16
+
+    $ cd VGG16
+    $ python main.py
 
