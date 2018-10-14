@@ -118,6 +118,7 @@ Malignant samples:
 
 ### Usage
 The test and train data should be put under '../data/test/' and '../data/train/'.
+    
     $ cd Different Classification Methods
 
 #### KNN
